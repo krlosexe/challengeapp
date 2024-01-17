@@ -27,9 +27,7 @@ const RootNavigator = (): JSX.Element => {
             <MainStack.Navigator screenOptions={{headerShown: false}}>
                 {!isFirstLoad ? (
                     <>
-                        <>
-                            <MainStack.Screen name="Home" component={SplashScreen} />
-                          </>
+                      <MainStack.Screen name="Home" component={HomeScreen} />
                     </>
                 ): (
                     <MainStack.Screen name="Splash" component={SplashScreen} />

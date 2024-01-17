@@ -3,7 +3,7 @@ import {constants} from '@app/config/constants';
 export const TIMEOUT_TIME = 10000;
 
 const request = axios.create({
-  baseURL: constants.apiServer,
+  baseURL: constants.APIURL,
   timeout: TIMEOUT_TIME,
 });
 
