@@ -1,0 +1,25 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "app/assets/fonts/Londrina_Solid/LondrinaSolid-Black.ttf",
+      "sha1": "d50fb384e6a9816b7026723b75c9b989f8deacae"
+    },
+    {
+      "path": "app/assets/fonts/Londrina_Solid/LondrinaSolid-Light.ttf",
+      "sha1": "24a7061226ccbdf99d2995b18b3e854853e67f95"
+    },
+    {
+      "path": "app/assets/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf",
+      "sha1": "3f8b03eb2732f1b618b7339a32f5f7e1f6897756"
+    },
+    {
+      "path": "app/assets/fonts/Londrina_Solid/LondrinaSolid-Thin.ttf",
+      "sha1": "a4325155262ae62234ead68716cdd0aea6bda845"
+    },
+    {
+      "path": "app/assets/fonts/Londrina_Solid/OFL.txt",
+      "sha1": "b34daf0bbe69f0640762570de07060b59ec1800e"
+    }
+  ]
+}
