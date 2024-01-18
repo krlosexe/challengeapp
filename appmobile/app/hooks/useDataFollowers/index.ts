@@ -26,7 +26,7 @@ export const useDataFollowers = (users: itemsType[]): UserDetailType => {
           const { login } = item;
           const { data } = await request.get(`users/${login}`);
           
-          arrayLabels.push(login);
+          arrayLabels.push(login.substring(0, 4) + "...");
           arrayValues.push(data.followers);
         });
 
@@ -36,7 +36,6 @@ export const useDataFollowers = (users: itemsType[]): UserDetailType => {
           labels: arrayLabels,
           values: arrayValues
         });
-        
       } catch (error) {
         setError(error);
       } finally {
