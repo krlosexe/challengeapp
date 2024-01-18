@@ -5,6 +5,8 @@ import {itemsType} from '@app/types/hooks/useSearch';
 import {styles} from './styles';
 import {useDataFollowers} from '@app/hooks/useDataFollowers';
 import showToast from '@app/helpers/showToast';
+import {commonStyles as stylesCommon} from '@app/styles/common';
+
 
 type modalPropsType = {
     modalVisible: boolean,
@@ -17,7 +19,8 @@ function Index({
     dataUsers
 }: modalPropsType) {
     const {data, loading, error} = useDataFollowers(dataUsers);
-
+    const commonStyles   = stylesCommon(); 
+    
     if(error){
         showToast('error', 'Error', error.message || 'An error occurred during the search.');
     }
@@ -34,7 +37,9 @@ function Index({
             <View style={styles.modalView}>
                 {loading ? (
                     <ActivityIndicator />
-                ): (
+                ): error ? (
+                    <Text style={[commonStyles.txt_neutral_light]}>{error.message}</Text>
+                 ):(
                     <Chart labels={data.labels} data={data.values} />
                 )}
                 <Pressable
