@@ -11,12 +11,12 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		362BE3B802B68A0ED2ABFE60 /* libPods-githubusers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8635120283CD03AD382550E5 /* libPods-githubusers.a */; };
 		50C28F13FD04419DA4EA4CFF /* LondrinaSolid-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8E0BCE7A37649B78005987E /* LondrinaSolid-Light.ttf */; };
+		5E4659D5B935358801505877 /* libPods-githubusers-githubusersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 129EA26C6C3FEF765FD2E270 /* libPods-githubusers-githubusersTests.a */; };
 		74CEFD64D07B4B8586EF651C /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 380E0335D01740DE9E256112 /* OFL.txt */; };
 		76EBF2B75E064878B39AAE64 /* LondrinaSolid-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73A89CCFB54B47399CD62B4F /* LondrinaSolid-Regular.ttf */; };
-		7F58C3010CFE23759F6F8925 /* libPods-githubusers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D67367F3143F2DF755E174ED /* libPods-githubusers.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		8A1BD5E0AB6F97A34E6880B5 /* libPods-githubusers-githubusersTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC50EF4C31C969F9F540A64 /* libPods-githubusers-githubusersTests.a */; };
 		AB6A35CA2B55B1AF00F07685 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB6A35C92B55B1AF00F07685 /* GoogleService-Info.plist */; };
 		B88EA33C3A9649D095D13955 /* LondrinaSolid-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF47D6CA608547A38726171B /* LondrinaSolid-Black.ttf */; };
 		FFE4E439BBF7499B99A6EAE0 /* LondrinaSolid-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D571D506826446D0992B64BD /* LondrinaSolid-Thin.ttf */; };
@@ -36,29 +36,29 @@
 		00E356EE1AD99517003FC87E /* githubusersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = githubusersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* githubusersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = githubusersTests.m; sourceTree = "<group>"; };
+		0D4D76434AF0916271C1F392 /* Pods-githubusers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubusers.debug.xcconfig"; path = "Target Support Files/Pods-githubusers/Pods-githubusers.debug.xcconfig"; sourceTree = "<group>"; };
+		129EA26C6C3FEF765FD2E270 /* libPods-githubusers-githubusersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-githubusers-githubusersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* githubusers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = githubusers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = githubusers/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = githubusers/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = githubusers/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = githubusers/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = githubusers/main.m; sourceTree = "<group>"; };
+		13E2DE45832566CB050D230E /* Pods-githubusers-githubusersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubusers-githubusersTests.release.xcconfig"; path = "Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests.release.xcconfig"; sourceTree = "<group>"; };
 		380E0335D01740DE9E256112 /* OFL.txt */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = OFL.txt; path = ../app/assets/fonts/Londrina_Solid/OFL.txt; sourceTree = "<group>"; };
-		65E1D174B19032092D577DF0 /* Pods-githubusers-githubusersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubusers-githubusersTests.release.xcconfig"; path = "Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests.release.xcconfig"; sourceTree = "<group>"; };
+		6358660450898BA7579B7B0A /* Pods-githubusers-githubusersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubusers-githubusersTests.debug.xcconfig"; path = "Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		73A89CCFB54B47399CD62B4F /* LondrinaSolid-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LondrinaSolid-Regular.ttf"; path = "../app/assets/fonts/Londrina_Solid/LondrinaSolid-Regular.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = githubusers/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8660904CF18BB87B4D8C09D6 /* Pods-githubusers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubusers.release.xcconfig"; path = "Target Support Files/Pods-githubusers/Pods-githubusers.release.xcconfig"; sourceTree = "<group>"; };
-		8EC50EF4C31C969F9F540A64 /* libPods-githubusers-githubusersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-githubusers-githubusersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8635120283CD03AD382550E5 /* libPods-githubusers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-githubusers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		90C7369E2BDE2B834AE67DC4 /* Pods-githubusers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubusers.release.xcconfig"; path = "Target Support Files/Pods-githubusers/Pods-githubusers.release.xcconfig"; sourceTree = "<group>"; };
 		AB0006DD2B3B0FCE00346E5E /* githubusers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = githubusers.entitlements; path = githubusers/githubusers.entitlements; sourceTree = "<group>"; };
 		AB6A35C92B55B1AF00F07685 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AB9F88F82B34897100E30467 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		AB9F88FD2B34898300E30467 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF47D6CA608547A38726171B /* LondrinaSolid-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LondrinaSolid-Black.ttf"; path = "../app/assets/fonts/Londrina_Solid/LondrinaSolid-Black.ttf"; sourceTree = "<group>"; };
 		D571D506826446D0992B64BD /* LondrinaSolid-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LondrinaSolid-Thin.ttf"; path = "../app/assets/fonts/Londrina_Solid/LondrinaSolid-Thin.ttf"; sourceTree = "<group>"; };
-		D5A78AFCC1BB99B55919D64E /* Pods-githubusers-githubusersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubusers-githubusersTests.debug.xcconfig"; path = "Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests.debug.xcconfig"; sourceTree = "<group>"; };
-		D67367F3143F2DF755E174ED /* libPods-githubusers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-githubusers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E0BCE7A37649B78005987E /* LondrinaSolid-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LondrinaSolid-Light.ttf"; path = "../app/assets/fonts/Londrina_Solid/LondrinaSolid-Light.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		EDFD295377F933E6864BE4D3 /* Pods-githubusers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubusers.debug.xcconfig"; path = "Target Support Files/Pods-githubusers/Pods-githubusers.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A1BD5E0AB6F97A34E6880B5 /* libPods-githubusers-githubusersTests.a in Frameworks */,
+				5E4659D5B935358801505877 /* libPods-githubusers-githubusersTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F58C3010CFE23759F6F8925 /* libPods-githubusers.a in Frameworks */,
+				362BE3B802B68A0ED2ABFE60 /* libPods-githubusers.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,8 +118,8 @@
 				AB9F88FD2B34898300E30467 /* UIKit.framework */,
 				AB9F88F82B34897100E30467 /* HealthKit.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				D67367F3143F2DF755E174ED /* libPods-githubusers.a */,
-				8EC50EF4C31C969F9F540A64 /* libPods-githubusers-githubusersTests.a */,
+				8635120283CD03AD382550E5 /* libPods-githubusers.a */,
+				129EA26C6C3FEF765FD2E270 /* libPods-githubusers-githubusersTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,10 +172,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EDFD295377F933E6864BE4D3 /* Pods-githubusers.debug.xcconfig */,
-				8660904CF18BB87B4D8C09D6 /* Pods-githubusers.release.xcconfig */,
-				D5A78AFCC1BB99B55919D64E /* Pods-githubusers-githubusersTests.debug.xcconfig */,
-				65E1D174B19032092D577DF0 /* Pods-githubusers-githubusersTests.release.xcconfig */,
+				0D4D76434AF0916271C1F392 /* Pods-githubusers.debug.xcconfig */,
+				90C7369E2BDE2B834AE67DC4 /* Pods-githubusers.release.xcconfig */,
+				6358660450898BA7579B7B0A /* Pods-githubusers-githubusersTests.debug.xcconfig */,
+				13E2DE45832566CB050D230E /* Pods-githubusers-githubusersTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -187,12 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "githubusersTests" */;
 			buildPhases = (
-				32D5C85F53D52681E6672875 /* [CP] Check Pods Manifest.lock */,
+				2BBC1CDCEA89FFBDCB0074B7 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				7CBB9524BEEE4B101E59B5DD /* [CP] Embed Pods Frameworks */,
-				26DC464B1C761BE9C9D30D8A /* [CP] Copy Pods Resources */,
+				5CDEEBE693D5E3261B276289 /* [CP] Embed Pods Frameworks */,
+				7B8586467F8CE34E6B2D2E36 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,14 +208,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "githubusers" */;
 			buildPhases = (
-				A64053EDC708367A6438C6A5 /* [CP] Check Pods Manifest.lock */,
+				79198EC87285A676CBFB4F31 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				FE460E27DE1A5654AAA3141F /* [CP] Embed Pods Frameworks */,
-				D8956C2AA7509C12BF7FCB2F /* [CP] Copy Pods Resources */,
+				75E2EB259C13596449B64683 /* [CP] Embed Pods Frameworks */,
+				E0C5599097A826F57C8FFAF4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -304,24 +304,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		26DC464B1C761BE9C9D30D8A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		32D5C85F53D52681E6672875 /* [CP] Check Pods Manifest.lock */ = {
+		2BBC1CDCEA89FFBDCB0074B7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,7 +326,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7CBB9524BEEE4B101E59B5DD /* [CP] Embed Pods Frameworks */ = {
+		5CDEEBE693D5E3261B276289 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,7 +343,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A64053EDC708367A6438C6A5 /* [CP] Check Pods Manifest.lock */ = {
+		75E2EB259C13596449B64683 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-githubusers/Pods-githubusers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-githubusers/Pods-githubusers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-githubusers/Pods-githubusers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79198EC87285A676CBFB4F31 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -382,7 +382,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D8956C2AA7509C12BF7FCB2F /* [CP] Copy Pods Resources */ = {
+		7B8586467F8CE34E6B2D2E36 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-githubusers-githubusersTests/Pods-githubusers-githubusersTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0C5599097A826F57C8FFAF4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,23 +435,6 @@
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FE460E27DE1A5654AAA3141F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-githubusers/Pods-githubusers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-githubusers/Pods-githubusers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-githubusers/Pods-githubusers-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -468,7 +468,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5A78AFCC1BB99B55919D64E /* Pods-githubusers-githubusersTests.debug.xcconfig */;
+			baseConfigurationReference = 6358660450898BA7579B7B0A /* Pods-githubusers-githubusersTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -495,7 +495,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 65E1D174B19032092D577DF0 /* Pods-githubusers-githubusersTests.release.xcconfig */;
+			baseConfigurationReference = 13E2DE45832566CB050D230E /* Pods-githubusers-githubusersTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -519,7 +519,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDFD295377F933E6864BE4D3 /* Pods-githubusers.debug.xcconfig */;
+			baseConfigurationReference = 0D4D76434AF0916271C1F392 /* Pods-githubusers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -554,7 +554,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8660904CF18BB87B4D8C09D6 /* Pods-githubusers.release.xcconfig */;
+			baseConfigurationReference = 90C7369E2BDE2B834AE67DC4 /* Pods-githubusers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
