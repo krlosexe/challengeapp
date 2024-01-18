@@ -1,14 +1,27 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Text, View} from 'react-native';
 import {styles} from './styles';
 import Input from '@app/components/forms/input';
 import Search from '@app/assets/icons/search.svg';
-import Send from '@app/assets/icons/send.svg';
 import {commonStyles as stylesCommon} from '@app/styles/common';
+import {useSearch} from '@app/hooks/useSearch';
 import Buttom from '@app/components/buttom';
 const Index: React.FC = () => {
-
+    const [search, setSearch] = useState<string>('');
+    const [loading, setLoading] = useState<boolean>(false);
     const commonStyles = stylesCommon();
+    
+    const SubmitSearch = async () =>{
+        setLoading(true);
+        try{
+            const data = await useSearch(search);
+            console.log(data)
+            setLoading(false);
+        }catch{
+            setLoading(false);
+        }
+        
+    }
 
     return  <View 
                 style={styles.content}
@@ -33,16 +46,16 @@ const Index: React.FC = () => {
                     <View style={styles.input}>
                         <Input 
                             placeholder='Search' 
-                            value='' 
-                            onChangeText={()=>{}}
-                            Icon={Search}    
+                            value={search}
+                            onChangeText={setSearch}
                         />
                     </View>
 
                     <View style={styles.buttom}>
                         <Buttom 
-                            Icon={Send}
-                            onSubmit={()=>{}}
+                            Icon={Search}
+                            onSubmit={SubmitSearch}
+                            loading={loading}
                         />
                     </View>
                     

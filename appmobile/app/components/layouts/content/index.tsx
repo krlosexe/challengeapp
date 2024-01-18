@@ -14,7 +14,7 @@ interface LayoutProps {
     const navigation = useNavigation<StackNavigationProp<any>>();
     const styles   = stylesLayout(); 
     const commonStyles   = stylesCommon(); 
-
+    
     return (
       <SafeAreaView style={styles.container}>
         <StatusBar
