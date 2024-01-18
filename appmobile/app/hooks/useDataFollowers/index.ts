@@ -3,21 +3,40 @@ import request from '@app/helpers/requests';
 import {itemsType} from '@app/types/hooks/useSearch';
 
 type UserDetailType = {
-  labels: string[]; 
-  data: number[];
+  data: {
+    labels: string[],
+    values: number[]
+  };
   loading: boolean;
   error: any
 };
 
-export const useUserDetail = (users: itemsType[]): UserDetailType => {
+export const useDataFollowers = (users: itemsType[]): UserDetailType => {
+  const [data, setData] = useState<any>(null);
   const [error, setError] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-  const data = {};
   useEffect(() => {
     const fetchData = async () => {
       try {
         setLoading(true);
-        const {data} = await request.get(`users/${userName}`);
+        let arrayLabels: string[] = [];
+        let arrayValues: number[] = [];
+
+        const promises = users.map(async (item: itemsType) => {
+          const { login } = item;
+          const { data } = await request.get(`users/${login}`);
+          
+          arrayLabels.push(login);
+          arrayValues.push(data.followers);
+        });
+
+        await Promise.all(promises);
+
+        setData({
+          labels: arrayLabels,
+          values: arrayValues
+        });
+        
       } catch (error) {
         setError(error);
       } finally {

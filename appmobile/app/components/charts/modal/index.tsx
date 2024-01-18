@@ -1,8 +1,10 @@
 import React from 'react';
-import { Modal, View, Pressable, Text} from 'react-native';
+import { Modal, View, Pressable, Text, ActivityIndicator} from 'react-native';
 import Chart from '../chart';
 import {itemsType} from '@app/types/hooks/useSearch';
 import {styles} from './styles';
+import {useDataFollowers} from '@app/hooks/useDataFollowers';
+import showToast from '@app/helpers/showToast';
 
 type modalPropsType = {
     modalVisible: boolean,
@@ -14,8 +16,12 @@ function Index({
     setModalVisible,
     dataUsers
 }: modalPropsType) {
+    const {data, loading, error} = useDataFollowers(dataUsers);
 
-    console.log({dataUsers})
+    if(error){
+        showToast('error', 'Error', error.message || 'An error occurred during the search.');
+    }
+
     return (
         <Modal
             animationType='fade'
@@ -26,7 +32,11 @@ function Index({
             }}>
             <View style={styles.centeredView}>
             <View style={styles.modalView}>
-                <Chart labels={["krlos", "luis"]} data={[20, 19]} />
+                {loading ? (
+                    <ActivityIndicator />
+                ): (
+                    <Chart labels={data.labels} data={data.values} />
+                )}
                 <Pressable
                     style={[styles.button, styles.buttonClose]}
                     onPress={() => setModalVisible(!modalVisible)}>
