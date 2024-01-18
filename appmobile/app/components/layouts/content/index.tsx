@@ -19,7 +19,7 @@ interface LayoutProps {
       backButton = false,
       colorBar = themes.colors.primary,
       barStyle = 'default',
-      backgroundColor = themes.colors.primary,
+      backgroundColor = themes.colors.white,
     }
   ) => {
     const navigation = useNavigation<StackNavigationProp<any>>();
