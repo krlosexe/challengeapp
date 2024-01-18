@@ -10,6 +10,7 @@ import {AppStateType} from '@app/redux/store';
 import {useSelector} from 'react-redux';
 import SplashScreen from '@app/screens/splash';
 import HomeScreen from '@app/screens/home';
+import UserDetail from '@app/screens/userDetail';
 import Footer from '@app/components/footer';
 
 const MainStack = createStackNavigator();
@@ -28,6 +29,7 @@ const RootNavigator = (): JSX.Element => {
                 {!isFirstLoad ? (
                     <>
                       <MainStack.Screen name="Home" component={HomeScreen} />
+                      <MainStack.Screen name="UserDetail" component={UserDetail} />
                     </>
                 ): (
                     <MainStack.Screen name="Splash" component={SplashScreen} />

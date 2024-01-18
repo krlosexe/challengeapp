@@ -82,13 +82,13 @@ export const commonStyles = () => {
     txt_h2: {
       fontFamily: themes.font.londrina.regular,
       fontSize: themes.font.size.large,
-      color: themes.colors.black
+      color: themes.colors.primary
     },
 
     txt_h2_bold: {
       fontFamily: themes.font.londrina.regular,
       fontSize: themes.font.size.large,
-      color: themes.colors.black
+      color: themes.colors.primary
     },
 
     txt_normal: {
@@ -99,14 +99,14 @@ export const commonStyles = () => {
     txt_neutral: {
       fontFamily: themes.font.londrina.regular,
       fontSize: themes.font.size.neutral,
-      color: themes.colors.black
+      color: themes.colors.primary
     },
 
 
     txt_neutral_light: {
       fontFamily: themes.font.londrina.light,
       fontSize: themes.font.size.neutral,
-      color: themes.colors.black
+      color: themes.colors.primary
     },
 
     txt_neutral_bold: {

@@ -6,7 +6,7 @@ export const stylesLayout = () => {
     return StyleSheet.create({
         container: {
             flex: 1,
-            backgroundColor: themes.colors.black,
+            backgroundColor: themes.colors.white,
         },
         content: {
             paddingHorizontal: 0,

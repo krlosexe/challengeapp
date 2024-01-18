@@ -1,11 +1,13 @@
 import React, {useState} from 'react';
-import {Text, View} from 'react-native';
+import {Text, View, Keyboard} from 'react-native';
 import {styles} from './styles';
 import Input from '@app/components/forms/input';
 import Search from '@app/assets/icons/search.svg';
 import {commonStyles as stylesCommon} from '@app/styles/common';
 import {useSearch} from '@app/hooks/useSearch';
 import Buttom from '@app/components/buttom';
+import {users} from '@app/redux/slices/users/types';
+import {store} from '@app/redux/store';
 const Index: React.FC = () => {
     const [search, setSearch] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(false);
@@ -15,12 +17,12 @@ const Index: React.FC = () => {
         setLoading(true);
         try{
             const data = await useSearch(search);
-            console.log(data)
+            store.dispatch(users(data.items.slice(0, 10)));
+            Keyboard.dismiss();
             setLoading(false);
         }catch{
             setLoading(false);
         }
-        
     }
 
     return  <View 

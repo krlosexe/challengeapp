@@ -9,8 +9,17 @@ import themes from '@app/themes';
 interface LayoutProps {
     children: ReactNode;
     backButton?: boolean;
+    colorBar?: string
+    barStyle?: 'default' | 'light-content' | 'dark-content'
   }
-  const Index: React.FC<LayoutProps> = ({ children, backButton = false }) => {
+  const Index: React.FC<LayoutProps> = (
+    { 
+      children, 
+      backButton = false,
+      colorBar = themes.colors.primary,
+      barStyle = 'default'
+    }
+  ) => {
     const navigation = useNavigation<StackNavigationProp<any>>();
     const styles   = stylesLayout(); 
     const commonStyles   = stylesCommon(); 
@@ -19,7 +28,8 @@ interface LayoutProps {
       <SafeAreaView style={styles.container}>
         <StatusBar
           animated={true}
-          backgroundColor={themes.colors.primary}
+          backgroundColor={colorBar}
+          barStyle={barStyle}
         />
         <View style={styles.content}>
           {children}
