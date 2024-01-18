@@ -6,6 +6,7 @@ import {AppStateType} from '@app/redux/store';
 import {useSelector} from 'react-redux';
 import ItemsUsers from './itemsUsers';
 import Margin from '../shared/margin';
+import NoResults from '../noResults';
 
 const Index = () => {
     const {users} = useSelector((state: AppStateType) => state.usersSlice);
@@ -31,12 +32,7 @@ const Index = () => {
                         />
                     </>
                 ): (
-                    <View style={styles.contentNoResults}>
-                        <Text style={[
-                            commonStyles.txt_neutral_light,
-                            styles.textNoResults
-                        ]}>No results found</Text>
-                    </View>
+                    <NoResults />
                 )}
             </View>
     

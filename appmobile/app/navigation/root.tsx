@@ -12,7 +12,6 @@ import SplashScreen from '@app/screens/splash';
 import HomeScreen from '@app/screens/home';
 import UserDetail from '@app/screens/userDetail';
 import Footer from '@app/components/footer';
-
 const MainStack = createStackNavigator();
 export const navigationRef = createNavigationContainerRef();
 
