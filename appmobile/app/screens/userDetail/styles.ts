@@ -6,6 +6,9 @@ export const styles = StyleSheet.create({
     content: {
         ...themes.layoutPaddigHorizontal
     },
+    contentError: {
+        ...themes.layoutPaddigHorizontal
+    },
     avatar: {
         marginTop: 50,
         alignSelf: 'center',

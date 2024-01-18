@@ -8,19 +8,29 @@ import {useSearch} from '@app/hooks/useSearch';
 import Buttom from '@app/components/buttom';
 import {users} from '@app/redux/slices/users/types';
 import {store} from '@app/redux/store';
+import showToast from '@app/helpers/showToast';
+
 const Index: React.FC = () => {
     const [search, setSearch] = useState<string>('');
     const [loading, setLoading] = useState<boolean>(false);
     const commonStyles = stylesCommon();
     
     const SubmitSearch = async () =>{
-        setLoading(true);
         try{
-            const data = await useSearch(search);
-            store.dispatch(users(data.items.slice(0, 10)));
+            if (search.length < 4) {
+                throw new Error('Search text must be at least 4 characters.')
+            }
+            if (search.toLowerCase() === 'doublevpartners') {
+                throw new Error('Search for "doublevpartners" is not allowed.');
+            }
+            setLoading(true);
+            
+            const {items} = await useSearch(search);
+            store.dispatch(users(items.slice(0, 10)));
             Keyboard.dismiss();
             setLoading(false);
-        }catch{
+        } catch (error: any) {
+            showToast('error', 'Error', error.message || 'An error occurred during the search.');
             setLoading(false);
         }
     }

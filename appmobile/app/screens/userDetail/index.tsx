@@ -14,18 +14,27 @@ import GithubIcon from '@app/assets/icons/github.svg';
 import HashIcon from '@app/assets/icons/hash.svg';
 import {commonStyles as stylesCommon} from '@app/styles/common';
 import Margin from '@app/components/shared/margin';
+import showToast from '@app/helpers/showToast';
 function Index() {
     const commonStyles   = stylesCommon(); 
     const route = useRoute<RouteProp<UserDetailScreen, 'UserDetail'>>();
     const {userLogin} = route.params;
 
-    const {data, loading} = useUserDetail(userLogin);
+    const {data, loading, error} = useUserDetail(userLogin);
+
+    if(error){
+        showToast('error', 'Error', error.message || 'An error occurred during the search.');
+    }
 
     return  <Layout colorBar='white' barStyle='dark-content'>
                 <Head title={userLogin} backButton={true} />
 
                 {loading ? (
                     <ActivityIndicator />
+                ): error ? (
+                   <View style={styles.contentError}>
+                        <Text style={[commonStyles.txt_neutral_light]}>{error.message}</Text>
+                   </View>
                 ): (
                     <ScrollView style={styles.content}>
                         <Image style={styles.avatar} source={{uri: data?.avatar_url}} />
