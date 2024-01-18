@@ -6,8 +6,10 @@ const themes = {
     white: '#ffffff',
     black: '#000000',
     gray: '#eeeeee',
-    primary: '#ff002c',
+    primary: '#0a1646',
+    seconday: '#13aa9c',
     grayDark: '#2C2C2C',
+    inputPlaceholderColor: "#e1e1e1"
   },
   font: {
     londrina: {
@@ -36,5 +38,8 @@ const themes = {
       xlargebig: 96,
     },
   },
+  layoutPaddigHorizontal: {
+    paddingHorizontal: 30
+  }
 };
 export default themes;

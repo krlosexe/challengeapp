@@ -4,5 +4,6 @@ export interface PropsIputType {
     value: string;
     inputType?: 'default' | 'email';
     secureTextEntry?: boolean;
+    Icon?: any;
     onChangeText: (text: string) => void;
 }

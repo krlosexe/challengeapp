@@ -102,6 +102,13 @@ export const commonStyles = () => {
       color: themes.colors.black
     },
 
+
+    txt_neutral_light: {
+      fontFamily: themes.font.londrina.light,
+      fontSize: themes.font.size.neutral,
+      color: themes.colors.black
+    },
+
     txt_neutral_bold: {
       fontFamily: themes.font.londrina.bold,
       fontSize: themes.font.size.neutral,

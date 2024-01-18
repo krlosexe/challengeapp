@@ -1,8 +1,6 @@
 
-import {StyleSheet, Dimensions} from 'react-native';
+import {StyleSheet} from 'react-native';
 import themes from '@app/themes';
-
-const width = Dimensions.get('window').width;
 
 export const stylesLayout = () => {
     return StyleSheet.create({
@@ -11,8 +9,7 @@ export const stylesLayout = () => {
             backgroundColor: themes.colors.black,
         },
         content: {
-            paddingHorizontal: width <= 834 ? 10: 30,
-            marginTop: 30,
+            paddingHorizontal: 0,
         },
         backButtonContent: {
             position: 'absolute',
@@ -31,6 +28,9 @@ export const stylesLayout = () => {
             color: themes.colors.black,
             alignSelf: 'center',
         },
+        text: {
+            color: "white"
+        }
     });
 };
 

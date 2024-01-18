@@ -1,10 +1,10 @@
 import React, {ReactNode} from 'react';
-import {View, SafeAreaView, TouchableOpacity, Text} from 'react-native';
+import {View, SafeAreaView, TouchableOpacity, Text, StatusBar} from 'react-native';
 import {stylesLayout} from './styles';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
 import {commonStyles as stylesCommon} from '@app/styles/common';
-
+import themes from '@app/themes';
 
 interface LayoutProps {
     children: ReactNode;
@@ -17,6 +17,10 @@ interface LayoutProps {
 
     return (
       <SafeAreaView style={styles.container}>
+        <StatusBar
+          animated={true}
+          backgroundColor={themes.colors.primary}
+        />
         <View style={styles.content}>
           {children}
         </View>

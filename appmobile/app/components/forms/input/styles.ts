@@ -1,26 +1,28 @@
 
 import {StyleSheet} from 'react-native';
-import {useSelector} from 'react-redux';
-import {AppStateType} from '@app/redux/store';
-
-export const useModeDark = () => {
-  return useSelector((state: AppStateType) => state.modeDark).modeDark;
-};
-
-export const stylesInput = () => {
+import themes from '@app/themes';
+export const styles = StyleSheet.create({
+  container: {
     
-    return StyleSheet.create({
-        container: {
-            marginVertical: 10,
-          },
-          input: {
-            width: 400,
-            height: 40,
-            borderColor: 'gray',
-            borderWidth: 1,
-            paddingHorizontal: 10,
-            color: 'white'
-          },
-    });
-};
+  },
+  input: {
+    width: '100%',
+    height: 45,
+    borderColor: 'gray',
+    borderWidth: 1,
+    paddingHorizontal: 10,
+    color: 'white',
+    backgroundColor: themes.colors.white,
+    borderRadius: 12,
+    fontSize: 18
+  },
+
+  contentIcon: {
+    position: 'absolute',
+    top: 10,
+    left: 10
+  }
+});
+
+
 
