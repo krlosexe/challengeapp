@@ -1,10 +1,15 @@
 
+import {Dimensions} from 'react-native'
 import {StyleSheet} from 'react-native';
 import themes from '@app/themes';
+
+const height = Dimensions.get("window").height
 export const styles = StyleSheet.create({
 
     content: {
-        ...themes.layoutPaddigHorizontal
+        ...themes.layoutPaddigHorizontal,
+        backgroundColor: themes.colors.white,
+        height
     },
     contentError: {
         ...themes.layoutPaddigHorizontal

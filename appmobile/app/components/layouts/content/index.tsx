@@ -10,14 +10,16 @@ interface LayoutProps {
     children: ReactNode;
     backButton?: boolean;
     colorBar?: string
-    barStyle?: 'default' | 'light-content' | 'dark-content'
+    barStyle?: 'default' | 'light-content' | 'dark-content',
+    backgroundColor?: string
   }
   const Index: React.FC<LayoutProps> = (
     { 
       children, 
       backButton = false,
       colorBar = themes.colors.primary,
-      barStyle = 'default'
+      barStyle = 'default',
+      backgroundColor = themes.colors.primary,
     }
   ) => {
     const navigation = useNavigation<StackNavigationProp<any>>();
@@ -25,7 +27,12 @@ interface LayoutProps {
     const commonStyles   = stylesCommon(); 
     
     return (
-      <SafeAreaView style={styles.container}>
+      <SafeAreaView style={[
+        styles.container,
+        {
+          backgroundColor
+        }
+      ]}>
         <StatusBar
           animated={true}
           backgroundColor={colorBar}

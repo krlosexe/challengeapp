@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
         backgroundColor: themes.colors.primary,
         paddingBottom: 40,
         borderBottomEndRadius: 30,
-        borderBottomLeftRadius: 30
+        borderBottomLeftRadius: 30,
     },
     text: {
         color: themes.colors.white,

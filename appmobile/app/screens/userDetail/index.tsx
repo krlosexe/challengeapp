@@ -24,18 +24,19 @@ function Index() {
         showToast('error', 'Error', error.message || 'An error occurred during the search.');
     }
 
-    return  <Layout colorBar='white' barStyle='dark-content'>
-                <Head title={userLogin} backButton={true} />
-
-                {loading ? (
-                    <ActivityIndicator />
-                ): error ? (
-                   <View style={styles.contentError}>
-                        <Text style={[commonStyles.txt_neutral_light]}>{error.message}</Text>
-                   </View>
-                ): (
-                    <UserProfile dataUser={data} />
-                )}
+    return  <Layout colorBar='white' barStyle='dark-content' backgroundColor='white'>
+                <View style={styles.content}>
+                    <Head title={userLogin} backButton={true} />
+                    {loading ? (
+                        <ActivityIndicator />
+                    ): error ? (
+                    <View style={styles.contentError}>
+                            <Text style={[commonStyles.txt_neutral_light]}>{error.message}</Text>
+                    </View>
+                    ): (
+                        <UserProfile dataUser={data} />
+                    )}
+                </View>
             </Layout>   
 }
 
