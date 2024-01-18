@@ -1,5 +1,5 @@
 import React, {ReactNode} from 'react';
-import {View, SafeAreaView, TouchableOpacity, Text, StatusBar} from 'react-native';
+import {View, SafeAreaView, TouchableOpacity, Text, StatusBar, Platform} from 'react-native';
 import {stylesLayout} from './styles';
 import {useNavigation} from '@react-navigation/native';
 import {StackNavigationProp} from '@react-navigation/stack';
@@ -19,7 +19,10 @@ interface LayoutProps {
       backButton = false,
       colorBar = themes.colors.primary,
       barStyle = 'default',
-      backgroundColor = themes.colors.white,
+      backgroundColor = 
+          Platform.OS === 'android' 
+              ? themes.colors.white
+              : themes.colors.primary,
     }
   ) => {
     const navigation = useNavigation<StackNavigationProp<any>>();
