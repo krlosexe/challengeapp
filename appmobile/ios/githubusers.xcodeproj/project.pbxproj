@@ -17,7 +17,6 @@
 		74CEFD64D07B4B8586EF651C /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 380E0335D01740DE9E256112 /* OFL.txt */; };
 		76EBF2B75E064878B39AAE64 /* LondrinaSolid-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 73A89CCFB54B47399CD62B4F /* LondrinaSolid-Regular.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		AB6A35CA2B55B1AF00F07685 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AB6A35C92B55B1AF00F07685 /* GoogleService-Info.plist */; };
 		B88EA33C3A9649D095D13955 /* LondrinaSolid-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF47D6CA608547A38726171B /* LondrinaSolid-Black.ttf */; };
 		FFE4E439BBF7499B99A6EAE0 /* LondrinaSolid-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D571D506826446D0992B64BD /* LondrinaSolid-Thin.ttf */; };
 /* End PBXBuildFile section */
@@ -52,7 +51,6 @@
 		8635120283CD03AD382550E5 /* libPods-githubusers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-githubusers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		90C7369E2BDE2B834AE67DC4 /* Pods-githubusers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-githubusers.release.xcconfig"; path = "Target Support Files/Pods-githubusers/Pods-githubusers.release.xcconfig"; sourceTree = "<group>"; };
 		AB0006DD2B3B0FCE00346E5E /* githubusers.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = githubusers.entitlements; path = githubusers/githubusers.entitlements; sourceTree = "<group>"; };
-		AB6A35C92B55B1AF00F07685 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AB9F88F82B34897100E30467 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		AB9F88FD2B34898300E30467 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CF47D6CA608547A38726171B /* LondrinaSolid-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "LondrinaSolid-Black.ttf"; path = "../app/assets/fonts/Londrina_Solid/LondrinaSolid-Black.ttf"; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				AB6A35C92B55B1AF00F07685 /* GoogleService-Info.plist */,
 				13B07FAE1A68108700A75B9A /* githubusers */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* githubusersTests */,
@@ -275,7 +272,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				AB6A35CA2B55B1AF00F07685 /* GoogleService-Info.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				B88EA33C3A9649D095D13955 /* LondrinaSolid-Black.ttf in Resources */,
 				50C28F13FD04419DA4EA4CFF /* LondrinaSolid-Light.ttf in Resources */,
