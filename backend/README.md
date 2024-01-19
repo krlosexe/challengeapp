@@ -1,5 +1,3 @@
-# Project Name
-
 ## Description
 Backend challenge test doublevpartners
 
@@ -30,3 +28,7 @@ Once the container is running, you can access the application from your browser:
 ```bash
 http://localhost:3000
 ```
+
+## Postman Collection
+To test the APIs, you can use the provided Postman collection. Import the collection JSON file located in the postman directory.
+[Download Postman Collection JSON](doblevpartners.postman_collection.json)
