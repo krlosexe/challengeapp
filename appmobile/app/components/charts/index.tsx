@@ -19,13 +19,13 @@ function Index() {
                 <ChartIcon stroke={'white'}/>
             </TouchableOpacity>
         }
-          {modalVisible &&
-            <Modal 
-                dataUsers={users}
-                modalVisible={modalVisible} 
-                setModalVisible={setModalVisible} />
-          }
-          
+        
+        {modalVisible &&
+        <Modal 
+            dataUsers={users}
+            modalVisible={modalVisible} 
+            setModalVisible={setModalVisible} />
+        }
        </>
     );
 }
